@@ -32,6 +32,7 @@ public class FindDuplicatesInArray {
         System.out.println("Using Hashset Technique");
         Set<String>data = new HashSet<>();
         for(String s : arr){
+            System.out.println(data.add(s));
             if(data.add(s) != true){
                 System.out.println(s);
             }
